@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/home/serhat/Desktop/DataStructures/build",
+  "command": "/usr/bin/c++   -g -o CMakeFiles/DATASTRUCTURES.dir/src/Vector.cpp.o -c /home/serhat/Desktop/DataStructures/src/Vector.cpp",
+  "file": "/home/serhat/Desktop/DataStructures/src/Vector.cpp",
+  "output": "CMakeFiles/DATASTRUCTURES.dir/src/Vector.cpp.o"
+}
+]

@@ -1,0 +1,3 @@
+/home/serhat/Desktop/DataStructures/build/CMakeFiles/DATASTRUCTURES.dir
+/home/serhat/Desktop/DataStructures/build/CMakeFiles/edit_cache.dir
+/home/serhat/Desktop/DataStructures/build/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/DATASTRUCTURES.dir/src/Vector.cpp.o -o DATASTRUCTURES 
