@@ -50,6 +50,7 @@ public:
 
     void PrintAllNode()
     {
+        LinkedList<T>* head = this;
         LinkedList<T>* current = head;
         while (current != nullptr) {
             std::cout << current->data << " ";
@@ -63,6 +64,7 @@ public:
 
     void Reverse()
     {   
+        LinkedList<T>* head = this;
         LinkedList<T>* prev = nullptr;
         LinkedList<T>* current = head;
         while (current != nullptr)
@@ -80,6 +82,7 @@ public:
 
     void AddToFront(T value)
     {
+        LinkedList<T>* head = this;
         LinkedList<T>* newNode = new LinkedList<T>(value);
         newNode->next = head; // Point new node to the current head
         head = newNode; // Update head to the new node
@@ -90,6 +93,7 @@ public:
 
     void AddToEnd(T value)
     {
+        LinkedList<T>* head = this;
         LinkedList<T>* newNode = new LinkedList<T>(value);
         if (head == nullptr) {
             head = newNode; // If the list is empty, set head to new node
@@ -109,7 +113,7 @@ public:
 
     void DeleteNode(int position)
     {
-        
+        LinkedList<T>* head = this;
         if (head == nullptr) {
             return; // List is empty, nothing to delete
         }
@@ -133,6 +137,7 @@ public:
 
     bool Search(T value)
     {
+        LinkedList<T>* head = this;
         LinkedList<T>* current = head;
         while (current != nullptr)
         {
@@ -149,6 +154,7 @@ public:
     //Check is in cycle
     bool IsCycle()
     {
+        LinkedList<T>* head = this;
         LinkedList<T>* fast = head;
         LinkedList<T>* slow = head;
         while(fast != nullptr && fast->next != nullptr)
@@ -174,8 +180,9 @@ class Stack
 private:
     LinkedList<T>* top; // Pointer to the top of the stack
 public:
-    stack() : top(nullptr) {} // Constructor initializes the stack to empty
-    ~stack() {
+    Stack() : top(nullptr) {} // Add constructor to initialize top
+
+    ~Stack() {
         while (top != nullptr) {
             pop(); // Pop all elements to free memory
         }
